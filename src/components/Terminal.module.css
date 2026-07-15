@@ -1,0 +1,31 @@
+.terminal {
+  background: #060a14;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  padding: 14px;
+  min-height: 180px;
+  max-height: 240px;
+  overflow-y: auto;
+  line-height: 1.8;
+}
+
+.dim {
+  color: #4a5568;
+}
+.ok {
+  color: #6ee7b7;
+}
+.warn {
+  color: #f6e05e;
+}
+.err {
+  color: #fc8181;
+}
+.info {
+  color: #90cdf4;
+}
+.url {
+  color: #b794f4;
+}

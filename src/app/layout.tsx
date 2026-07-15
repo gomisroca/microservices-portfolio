@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// @ts-expect-error TS doesn't resolve CSS side-effect imports in this setup
 import "./globals.css";
 
 export const metadata: Metadata = {

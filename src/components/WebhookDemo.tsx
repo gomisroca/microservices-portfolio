@@ -32,7 +32,7 @@ type DeliveryResult = {
 
 export default function WebhookDemo() {
   const [selected, setSelected] = useState<Set<DestKey>>(
-    new Set(["discord", "slack"]),
+    new Set<DestKey>(["discord", "slack"]),
   );
   const [eventType, setEventType] = useState("deploy.success");
   const [dispatching, setDispatching] = useState(false);
@@ -69,7 +69,7 @@ export default function WebhookDemo() {
       type: "dim",
     });
 
-    const pending = [...selected];
+    const pending = Array.from(selected);
     const final: DeliveryResult[] = [];
 
     await Promise.all(
